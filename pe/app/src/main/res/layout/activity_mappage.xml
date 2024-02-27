@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.supermap.mapping.MapView
+            android:id="@+id/map"
+            android:layout_width="415dp"
+            android:layout_height="682dp"
+            android:background="#F3FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        </com.supermap.mapping.MapView>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/text_shape"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/map"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Location"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:onClick="self_tocenter"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_baseline_my_location_24" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我的位置" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#0B0A0A" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Zoomout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="放 大" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#0B0A0A" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Zoomin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_baseline_remove_25" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="缩 小" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/toolbar_selector"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Spinner
+                android:id="@+id/spinner_map"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <EditText
+                android:id="@+id/place_edit"
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:ems="10"
+                android:hint="请输入关键字"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="5" />
+
+            <Button
+                android:id="@+id/query"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.5"
+                android:background="@color/miku"
+                android:backgroundTint="@color/miku"
+                android:text="查询"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--如果你用的不是androidx版本, 那么app:layout_behavior中设置的值就对应的要更换为design库中的类名-->
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="48dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+        <ListView
+            android:id="@+id/list_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:onClick="Click_back"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:id="@+id/toThere"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="pilot"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_baseline_directions_car_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Address"
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="地址:"
+                        android:textSize="25dp" />
+
+
+                    <TextView
+                        android:id="@+id/Address_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="TextView"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Phone"
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="电话:"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/Phone_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="TextView"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Score"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="评分:"
+                        android:textSize="25dp" />
+
+                    <RatingBar
+                        android:id="@+id/Score_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:numStars="5"
+                        android:stepSize="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Time"
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="时间:"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/Time_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="TextView"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

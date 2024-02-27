@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/place_detail"
+        android:layout_width="268dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_detail" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="215dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/buttonshap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_detail" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="距离"
+        app:layout_constraintEnd_toStartOf="@+id/place_detail"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/name_detail"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#3F51B5"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/place_detail"
+        app:layout_constraintEnd_toStartOf="@+id/place_detail"
+        app:layout_constraintStart_toEndOf="@+id/distance"
+        app:layout_constraintTop_toTopOf="@+id/place_detail"
+        app:strokeColor="#3F51B5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

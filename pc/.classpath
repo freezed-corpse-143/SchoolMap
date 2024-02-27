@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Resources"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/GettingStarted/Eclipse/GettingStarted/jar/com.supermap.data.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/GettingStarted/Eclipse/GettingStarted/jar/com.supermap.mapping.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/GettingStarted/Eclipse/GettingStarted/jar/slf4j-log4j12-1.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.spatialanalyst.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.addressmatching.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.navigation.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.networkanalyst.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.spatialstatistics.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.terrainanalyst.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.analyst.trafficanalyst.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.chart.conversion.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.chart.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.data.cloudlicense.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.data.conversion.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.data.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.data.processing.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.data.topology.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.layout.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.licensehasp.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.licensemanager.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.mapping.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.plot.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.realspace.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.realspace.networkanalyst.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.realspace.spatialanalyst.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.realspace.threeddesigner.citygmlconvertor.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.realspace.threeddesigner.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.tilestorage.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/supermap-iobjectsjava-10.1.2-19530-86195-win-all/Bin/com.supermap.ui.controls.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
