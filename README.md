@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SchoolMap
 
 基于SuperMap组件的支持
